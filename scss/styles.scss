@@ -1,0 +1,259 @@
+// $font-size: 50px;
+body {
+  font-size: '20px'
+}
+
+.headerBackDrop{
+  position: absolute;
+  top: 0%;
+  left: 12%;
+  height: 45%;
+  width: 88%;
+  background: rgba(0, 0, 0, 0.6);
+  // border-radius: 50%;
+}
+.aboutMeHeader{
+  font-size: 3rem;
+  // line-height: 12vh;
+  font-family: 'Niconne', cursive;
+  font-weight: 700;
+  background-image: linear-gradient(45deg, black, rgb(255, 255, 255));
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: white;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+    text-shadow: 1px 1px 0px  rgba(255, 255, 255, 0.4);
+}
+#aboutMe{
+  font-size:20px;
+  position: absolute;
+  color: white;
+  width: 600px;
+  bottom: 20%;
+  left: 34%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 10px 15px 20px; //top right bottom left
+  border: 1px solid #cdcdcd;
+  border-color: #ffffff;
+  border-radius: 10px / 20px;
+}
+
+.nameHeader{
+  position: absolute;
+  top: 0%;
+  right: 29%;
+  font-size: 6rem;
+  line-height: 12vh;
+  text-shadow: 3px 3px 0px  rgba(255, 255, 255, 0.4);
+
+}
+.selfie{
+  position: absolute;
+  top: 35%;
+  height: 72%;
+  // width: 220px;
+  right: 40%;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+}
+#github, #resume, #aboutMeTitle, #linkedIn {
+  position: absolute;
+  text-shadow: 3px 3px 0px  rgba(10, 10, 10, 0.4);
+  font-size: 2.5rem;
+}
+
+#github:hover, #resume:hover, #linkedIn:hover,#aboutMeTitle:hover {
+  position: absolute;
+  text-shadow: 3px 3px 0px  rgba(248, 244, 9, 0.5);
+  font-size: 2.5rem;
+}
+
+#github{
+  text-decoration: none;
+  color: white;
+  top: 50%;
+  left: 25%;
+}
+#resume{
+  text-decoration: none;
+  color: white;
+  top: 50%;
+  right: 25%;
+}
+#aboutMeTitle{
+  bottom: -26%;
+  right: 44.5%;
+}
+#linkedIn{
+  text-decoration: none;
+  color: white;
+  bottom: -110%;
+  right: 44.5%;
+}
+
+.subBody{
+  // background-image: url('/images/background.jpg');
+  width: 88%;
+  height: 100%;
+  margin-left: 12%; /* Same as the width of the sidenav */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ex{
+  color: red;
+}
+.working{
+  color: orange;
+}
+
+.sidenav {
+  height: 100%;
+  width: 12%;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 12%; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+.frame{
+  z-index: -7;
+}
+
+#reviewsProject, #checkoutCalendarProject, #mineSweeperProject,#ticTacToeProject, #calculatorProject, #connectFourProject{
+	position: absolute;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+  // border-radius: 2px 4px 2px;
+  // border-radius: 10px 5%;
+  border-radius: 30px 30px 30px 30px;
+  border: 1px solid #000000;
+
+  border-color: red;
+  border-width: 1px;
+}
+#reviewsProject:hover, #checkoutCalendarProject:hover, #mineSweeperProject:hover,#ticTacToeProject:hover, #calculatorProject:hover, #connectFourProject:hover{
+  background: rgba(0,0,0, 0.8);
+}
+
+#reviewsProject{
+  left: 14%
+}
+#reviewsProject:hover{
+  #reviewsTechnologies{width:400px;}
+  left: 13%
+}
+#calculatorProject{
+  right: 29.7%;
+  top: 8%;
+}
+#calculatorProject:hover{
+  #calculatorTechnologies{width:400px;}
+  right: 28.8%;
+}
+#checkoutCalendarProject{
+  right: 1.5%
+}
+#checkoutCalendarProject:hover{
+  #checkoutCalendarTechnologies{width:400px;}
+  right: 1%
+}
+#mineSweeperProject{
+  bottom: 5%;
+  left: 14%
+}
+#mineSweeperProject:hover{
+  #mineSweeperTechnologies{width:400px;}
+  left: 13%
+}
+#connectFourProject{
+  bottom: 5%;
+  right: 29.7%;
+}
+#connectFourProject:hover{
+  #connectFourTechnologies{width:400px;}
+  right: 28.8%;
+  }
+#ticTacToeProject{
+  bottom: 5%;
+  right: 1.5%
+}
+#ticTacToeProject:hover{
+  #ticTacToeTechnologies{width:400px;}
+  right: 1%
+}
+
+#reviewsTitle, #checkoutCalendarTitle, #mineSweeperTitle, #ticTacToeTitle, #connectFourTitle,  #calculatorTitle{
+  color: white;
+	font-size: 20px;;
+  text-align: center;
+	// padding-bottom: 20px;
+  position: relative;
+  z-index: 3;
+  text-shadow:
+		0 0 7px black,
+		0 0 10px black,
+		0 0 21px white,
+		0 0 42px yellow,
+		0 0 82px yellow,
+		0 0 92px yellow,
+		0 0 102px yellow,
+		0 0 151px yellow;
+}
+#reviewsTechnologies, #checkoutCalendarTechnologies, #mineSweeperTechnologies,#ticTacToeTechnologies, #connectFourTechnologies,  #calculatorTechnologies{
+	font-size: 20px;;
+  text-align: center;
+  border-radius: 0px 0px 30px 30px;
+  border: 1px solid #000000;
+	// background: rgba(0, 0, 0, 0.7);
+  width:376px;
+}
+
+.techDesc{
+  color: #00BFFF;
+  font-size: 17px;
+  text-decoration: underline;
+}
+.techHead{
+  color: #CCCC00;
+  font-size: 15px;
+  text-decoration: underline;
+}
+
+.tech{
+  color: #add8e6;
+  font-size: 17px;
+  padding-left: 10px;
+}
+.description{
+  color: #add8e6;
+  font-size: 14px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

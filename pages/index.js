@@ -1,18 +1,16 @@
 import Link from 'next/link'
+import AboutMe from './AboutMe.js'
+import Image from 'next/image'
+
+import '../scss/styles.scss'
 
 export default function Home() {
   return (
-    <ul>
-      <li>
-        <Link href="/b" as="/a">
-          <a>a</a>
-        </Link>
-      </li>
-      <li>
-        <Link href="/a" as="/b">
-          <a>b</a>
-        </Link>
-      </li>
-    </ul>
-  )
-}
+  <div style={{marginLeft: "12%"}}>
+    {/* <Image id="mineSweeperDisplay"
+        src='/images/background.jpg'
+        alt="loading..."
+        layout = "fill"
+        /> */}
+  </div>
+)}
