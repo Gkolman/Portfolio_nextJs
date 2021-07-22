@@ -27,7 +27,7 @@ export default function Calculator() {
 
     return (
       <div id="calculatorProject"onMouseEnter={e => {hoverOver()}}onMouseLeave={e => {hoverOut()}}>
-        <div id="calculatorTitle" > calculator </div>
+        <div id="calculatorTitle"> <a  href="https://github.com/Gkolman/react-native-calculator" style={{color:'white'}} > Calculator </a></div>
         <Image id="calculatorDisplay"  alt="loading..."
         src= {state.toggled ?'/images/calculator.gif' : '/images/calculator.png'}
         height= {state.toggled ? "245px": "230px"}

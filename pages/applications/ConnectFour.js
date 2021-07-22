@@ -34,7 +34,7 @@ export default function connectFour() {
   if (state.toggled) {
     return (
       <div id="connectFourProject"onMouseEnter={e => {hoverOver()}}onMouseLeave={e => {hoverOut()}}>
-        <div id="connectFourTitle" > connectFour </div>
+        <div id="connectFourTitle"> <a  href="https://github.com/Gkolman/mini-apps-1" style={{color:'white'}} >  Connect-Four </a></div>
         <Image id="connectFourDisplay"src = "/images/connectFour.gif" alt="loading..."height="260"width="425"/>
         {description()}
       </div>
@@ -42,7 +42,7 @@ export default function connectFour() {
   } else {
     return (
       <div id="connectFourProject"onMouseEnter={e => {hoverOver()}}onMouseLeave={e => {hoverOut()}}>
-        <div id="connectFourTitle" > connectFour </div>
+        <div id="connectFourTitle"> <a  href="https://github.com/Gkolman/mini-apps-1" style={{color:'white'}} >  Connect-Four </a></div>
         <Image id="connectFourDisplay"src = "/images/connectFour.png" alt="loading..."height="230"width="400"/>
         {technologyUsed()}
     </div>

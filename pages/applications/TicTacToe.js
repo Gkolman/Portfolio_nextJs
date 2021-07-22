@@ -31,16 +31,16 @@ export default function TicTacToe() {
   if (state.toggled) {
     return (
       <div id="ticTacToeProject"onMouseEnter={e => {hoverOver()}}onMouseLeave={e => {hoverOut()}}>
-        <div id="ticTacToeTitle"> ticTacToe </div>
-        <Image id="ticTacToeDisplay"src = "/images/ticTacToe.gif"alt="loading..."height="260"width="400"/>
+      <div id="ticTacToeTitle"> <a  href="https://github.com/Gkolman/mini-apps-1" style={{color:'white'}} >  Tic-tac-toe </a></div>
+        <Image id="ticTacToeDisplay"src = "/images/tic-tac-toe.gif"alt="loading..."height="260"width="400"/>
         {description()}
       </div>
     )
   } else {
     return (
       <div id="ticTacToeProject"onMouseEnter={e => {hoverOver()}}onMouseLeave={e => {hoverOut()}}>
-      <div id="ticTacToeTitle"> ticTacToe </div>
-      <Image id="ticTacToeDisplay"src = "/images/ticTacToe.png"alt="loading..."height="230"width="376"/>
+      <div id="ticTacToeTitle"> <a  href="https://github.com/Gkolman/mini-apps-1" style={{color:'white'}} >  Tic-tac-toe </a></div>
+      <Image id="ticTacToeDisplay"src = "/images/tic-tac-toe.png"alt="loading..."height="230"width="376"/>
       {technologyUsed()}
     </div>
     )

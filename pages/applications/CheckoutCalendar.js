@@ -41,7 +41,7 @@ export default function CheckoutCalendar() {
   }
     return(
     <div id="checkoutCalendarProject"onMouseEnter={e => {hoverOver()}} onMouseLeave={e => {hoverOut()}}>
-      <div id="checkoutCalendarTitle"> Checkout-Pricing: micro-service</div>
+      <div id="checkoutCalendarTitle"> <a  href="https://github.com/Gkolman/checkout-calendar" style={{color:'white'}} >  Checkout/Pricing: micro-service </a></div>
       <Image id="checkoutCalendarDisplay" alt="loading..."
         src ={state.toggled ? '/images/sdc.gif' : '/images/sdc.png'}
         height={state.toggled ? 230 : 215}

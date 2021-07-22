@@ -51,15 +51,16 @@ export default function Reviews() {
   if (state.toggled) {
     return(
     <div id="reviewsProject"onMouseEnter={e => {hoverOver()}} onMouseLeave={e => {hoverOut()}}>
-      <div id="reviewsTitle"> Reviews: micro-service</div>
+      <div id="reviewsTitle"> <a  href="https://github.com/Gkolman/Reviews-component" style={{color:'white'}} > Reviews: micro-service </a></div>
       <Image id="reviewsDisplay" src = "/images/FecGif.gif" alt="loading..."height="230"width="400"/>
       {description()}
     </div>
     )
+
   } else {
     return (
       <div id="reviewsProject"onMouseEnter={e => {hoverOver()}} onMouseLeave={e => {hoverOut()}}>
-        <div id="reviewsTitle"> Reviews: micro-service</div>
+      <div id="reviewsTitle"> <a  href="https://github.com/Gkolman/Reviews-component" style={{color:'white'}} > Reviews: micro-service </a></div>
         <Image id="reviewsDisplay" placeholder="blur" src = "/images/Fec.png" alt="loading..."height="215"width="376"/>
         {/* <Image id="reviewsDisplay" src = "/images/Fec.png" alt="loading..."height="215%"width="375%"/> */}
 
