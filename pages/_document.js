@@ -7,6 +7,7 @@ export default class MyDocument extends Document {
       <html>
         <Head>
       <title>Gage Guzman</title>
+      <meta name="viewport" content="width=device-width" />
       {/* <link rel="stylesheet" pathname = "../scss/styles.scss"/> */}
       {/* <link rel="stylesheet" pathname = "/_next/static/style.css"/> */}
       {/* <link rel="stylesheet" pathname = "../scss/styles.css"/> */}

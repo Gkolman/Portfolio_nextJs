@@ -14,7 +14,12 @@ export default function Applications() {
     <div>
       <SideBar/>
       <div className='frame'>
-        <Image id="mineSweeperDisplay"src='/images/background6.jpg' alt="loading..."layout = "fill"/>
+        <Image
+          id=""
+          src='/images/background6.jpg'
+          alt="loading..."
+          layout = "fill"
+        />
       </div>
       <div className="subBody">
         <CheckoutCalendar/>

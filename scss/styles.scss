@@ -27,12 +27,12 @@ body {
     text-shadow: 1px 1px 0px  rgba(255, 255, 255, 0.4);
 }
 #aboutMe{
-  font-size:20px;
+  font-size:1.3vw;
   position: absolute;
   color: white;
-  width: 600px;
+  width: 35vw;
   bottom: 20%;
-  left: 34%;
+  left: 37%;
   text-align: center;
   background: rgba(0, 0, 0, 0.6);
   padding: 10px 10px 15px 20px; //top right bottom left
@@ -45,7 +45,7 @@ body {
   position: absolute;
   top: 0%;
   right: 29%;
-  font-size: 6rem;
+  font-size: 6.4vw;
   line-height: 12vh;
   text-shadow: 3px 3px 0px  rgba(255, 255, 255, 0.4);
 
@@ -53,7 +53,9 @@ body {
 .selfie{
   position: absolute;
   top: 35%;
-  height: 72%;
+  height: 17vw;
+  width: 17vw;
+  // height: 72%;
   // width: 220px;
   right: 40%;
   background: rgba(0, 0, 0, 0.6);
@@ -62,13 +64,15 @@ body {
 #github, #resume, #aboutMeTitle, #linkedIn {
   position: absolute;
   text-shadow: 3px 3px 0px  rgba(10, 10, 10, 0.4);
-  font-size: 2.5rem;
+  font-size: 3vw;
 }
 
 #github:hover, #resume:hover, #linkedIn:hover,#aboutMeTitle:hover {
   position: absolute;
   text-shadow: 3px 3px 0px  rgba(248, 244, 9, 0.5);
-  font-size: 2.5rem;
+  // font-size: 2.5rem;
+    font-size: 3vw;
+
 }
 
 #github{
@@ -151,66 +155,85 @@ body {
   // border-radius: 10px 5%;
   border-radius: 30px 30px 30px 30px;
   border: 1px solid #000000;
-
   border-color: red;
+  text-align: center;
   border-width: 1px;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  padding-bottom: 1vw;
 }
 #reviewsProject:hover, #checkoutCalendarProject:hover, #mineSweeperProject:hover,#ticTacToeProject:hover, #calculatorProject:hover, #connectFourProject:hover{
   background: rgba(0,0,0, 0.8);
 }
 
 #reviewsProject{
-  left: 14%
-}
-#reviewsProject:hover{
-  #reviewsTechnologies{width:400px;}
+  height: auto;
+  width: auto;
   left: 13%
 }
+#reviewsProject:hover{
+  left: 12%;
+  height: auto;
+  width: 28vw;
+
+}
 #calculatorProject{
-  right: 29.7%;
+  height: auto;
+  width: auto;
+  right: 31.8%;
   top: 8%;
 }
 #calculatorProject:hover{
-  #calculatorTechnologies{width:400px;}
-  right: 28.8%;
+  height: auto;
+  width: 28vw;
+  top: 7%;
+  right: 30.5%;
 }
 #checkoutCalendarProject{
+  height: auto;
+  width: auto;
   right: 1.5%
 }
 #checkoutCalendarProject:hover{
-  #checkoutCalendarTechnologies{width:400px;}
+  height: auto;
+  width: 29vw;
   right: 1%
 }
 #mineSweeperProject{
-  bottom: 5%;
-  left: 14%
-}
-#mineSweeperProject:hover{
-  #mineSweeperTechnologies{width:400px;}
+  height: auto;
+  width: 26vw;
+  bottom: 2%;
   left: 13%
 }
+#mineSweeperProject:hover{
+  width: 28vw;
+  left: 12%
+}
 #connectFourProject{
-  bottom: 5%;
-  right: 29.7%;
+  height: auto;
+  width: 25.7vw;
+  bottom: 2%;
+  right: 31.3%;
 }
 #connectFourProject:hover{
-  #connectFourTechnologies{width:400px;}
-  right: 28.8%;
+  width: 28vw;
+  right: 30.2%;
   }
 #ticTacToeProject{
-  bottom: 5%;
+  height: auto;
+  width: 27vw;
+  bottom: 2%;
   right: 1.5%
 }
 #ticTacToeProject:hover{
-  #ticTacToeTechnologies{width:400px;}
-  right: 1%
+  width: 29vw;
+  right: 0.5%
 }
 
 #reviewsTitle, #checkoutCalendarTitle, #mineSweeperTitle, #ticTacToeTitle, #connectFourTitle,  #calculatorTitle{
   color: white;
-	font-size: 20px;;
+	font-size: 1.5vw;;
   text-align: center;
-	// padding-bottom: 20px;
   position: relative;
   z-index: 3;
   text-shadow:
@@ -224,33 +247,35 @@ body {
 		0 0 151px yellow;
 }
 #reviewsTechnologies, #checkoutCalendarTechnologies, #mineSweeperTechnologies,#ticTacToeTechnologies, #connectFourTechnologies,  #calculatorTechnologies{
-	font-size: 20px;;
-  text-align: center;
-  border-radius: 0px 0px 30px 30px;
-  border: 1px solid #000000;
+	// font-size: 1px;
+  // border-radius: 0px 0px 30px 30px;
+  // border: 1px solid #000000;
+  // font-size-adjust: 20px;
 	// background: rgba(0, 0, 0, 0.7);
-  width:376px;
+  // width:376px;
+
+  // width:'35vw'
 }
 
 .techDesc{
   color: #00BFFF;
-  font-size: 17px;
+  font-size: 1.4vw;
   text-decoration: underline;
 }
 .techHead{
   color: #CCCC00;
-  font-size: 15px;
+  font-size: 1.4vw;
   text-decoration: underline;
 }
 
 .tech{
   color: #add8e6;
-  font-size: 17px;
+  font-size: 1.3vw;
   padding-left: 10px;
 }
 .description{
   color: #add8e6;
-  font-size: 14px;
+  font-size: 0.9vw;
 }
 
 @media screen and (max-height: 450px) {

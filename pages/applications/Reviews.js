@@ -40,9 +40,9 @@ export default function Reviews() {
       <div id="reviewsTechnologies">
       <div className="techHead">Description:</div>
       <div>
-            <div className="description">
-            Designed reviews micro-service for a service oriented full stack application. Reviews are paginated dynamically using react and are filterable based on user preference. Data is stored in mongoDb and is pulled through an api built using express that targets specific product data via url query parameters. Code Is transpiled via Webpack and Babel then bundled and can be requested via a url. End to end testing has been achieved through using mocha/chai, Jest, and enzyme for the front end and SuperTest  for the back-end API. Containerized with Docker for easy deployment and distributed testing.
-            </div>
+        <div className="description">
+        Designed reviews micro-service for a service oriented full stack application. Reviews are paginated dynamically using react and are filterable based on user preference. Data is stored in mongoDb and is pulled through an api built using express that targets specific product data via url query parameters. Code Is transpiled via Webpack and Babel then bundled and can be requested via a url. End to end testing has been achieved through using mocha/chai, Jest, and enzyme for the front end and SuperTest  for the back-end API. Containerized with Docker for easy deployment and distributed testing.
+        </div>
       </div>
     </div>
     )
@@ -52,7 +52,11 @@ export default function Reviews() {
     return(
     <div id="reviewsProject"onMouseEnter={e => {hoverOver()}} onMouseLeave={e => {hoverOut()}}>
       <div id="reviewsTitle"> <a  href="https://github.com/Gkolman/Reviews-component" style={{color:'white'}} > Reviews: micro-service </a></div>
-      <Image id="reviewsDisplay" src = "/images/FecGif.gif" alt="loading..."height="230"width="400"/>
+      <Image id="reviewsDisplay" src = "/images/FecGif.gif"
+        alt="loading..."
+        height="5vw"
+        width="8vw"
+        layout="responsive"/>
       {description()}
     </div>
     )
@@ -61,9 +65,11 @@ export default function Reviews() {
     return (
       <div id="reviewsProject"onMouseEnter={e => {hoverOver()}} onMouseLeave={e => {hoverOut()}}>
       <div id="reviewsTitle"> <a  href="https://github.com/Gkolman/Reviews-component" style={{color:'white'}} > Reviews: micro-service </a></div>
-        <Image id="reviewsDisplay" placeholder="blur" src = "/images/Fec.png" alt="loading..."height="215"width="376"/>
-        {/* <Image id="reviewsDisplay" src = "/images/Fec.png" alt="loading..."height="215%"width="375%"/> */}
-
+        <Image id="reviewsDisplay" src = "/images/Fec.png"
+        alt="loading..."
+        height="5vh"
+        width="8vw"
+        layout="responsive"/>
         {technologyUsed()}
     </div>
     )

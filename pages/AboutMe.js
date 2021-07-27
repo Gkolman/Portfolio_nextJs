@@ -21,7 +21,7 @@ export default function AboutMe() {
         <div className="headerBackDrop">
           <div className="nameHeader" > Gage Guzman </div>
           <div className="selfie">
-            <Image src='/images/selfie.png'width={'250%'}height={'250%'}alt="loading..."/>
+            <Image src='/images/selfie.png' width='1vw' height='1vw' alt="loading..." layout="responsive"/>
           </div>
 
           <a  id="github" href="https://github.com/Gkolman">Github</a>

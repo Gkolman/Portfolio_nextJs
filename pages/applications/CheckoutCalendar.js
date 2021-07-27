@@ -44,8 +44,9 @@ export default function CheckoutCalendar() {
       <div id="checkoutCalendarTitle"> <a  href="https://github.com/Gkolman/checkout-calendar" style={{color:'white'}} >  Checkout/Pricing: micro-service </a></div>
       <Image id="checkoutCalendarDisplay" alt="loading..."
         src ={state.toggled ? '/images/sdc.gif' : '/images/sdc.png'}
-        height={state.toggled ? 230 : 215}
-        width= {state.toggled ? 400 : 376}
+        height="5vw"
+        width="8vw"
+        layout="responsive"
       />
       <div id="checkoutCalendarTechnologies">{state.toggled ? description() : technologyUsed()}</div>
     </div>

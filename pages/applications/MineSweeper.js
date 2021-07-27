@@ -36,8 +36,12 @@ export default function MineSweeper() {
     return (
       <div id="mineSweeperProject"onMouseEnter={e => {hoverOver()}}onMouseLeave={e => {hoverOut()}}>
       <div id="mineSweeperTitle"> <a  href="https://github.com/Gkolman/mini-apps-2" style={{color:'white'}} >  MineSweeper </a></div>
-      <Image src = "/images/mineSweeper.gif" alt="loading..."height="260"width="400"/>
-      {description()}
+      <Image src = "/images/mineSweeper.gif"
+        alt="loading..."
+        height="5vw"
+        width="8vw"
+        layout="responsive"/>
+          {description()}
 
     </div>
     )
@@ -45,7 +49,11 @@ export default function MineSweeper() {
     return (
       <div id="mineSweeperProject"onMouseEnter={e => {hoverOver()}}onMouseLeave={e => {hoverOut()}}>
       <div id="mineSweeperTitle"> <a  href="https://github.com/Gkolman/mini-apps-2" style={{color:'white'}} >  MineSweeper </a></div>
-      <Image src = "/images/mineSweeper.png" alt="loading..."height="230"width="376"/>
+      <Image src = "/images/mineSweeper.png"
+        alt="loading..."
+        height="5vw"
+        width="8vw"
+        layout="responsive"/>
       {technologyUsed()}
     </div>
     )

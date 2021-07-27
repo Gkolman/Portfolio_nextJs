@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
+
+
 export default function Calculator() {
   var [state,setState] = useState({toggled: false})
 
@@ -30,12 +32,11 @@ export default function Calculator() {
         <div id="calculatorTitle"> <a  href="https://github.com/Gkolman/react-native-calculator" style={{color:'white'}} > Calculator </a></div>
         <Image id="calculatorDisplay"  alt="loading..."
         src= {state.toggled ?'/images/calculator.gif' : '/images/calculator.png'}
-        height= {state.toggled ? "245px": "230px"}
-        width={state.toggled ? "425px": "400px"}/>
+        alt="loading..."
+        height="5vw"
+        width="8vw"
+        layout="responsive"/>
         <div id="calculatorTechnologies"
-          style={{
-            width: state.toggled ? 425: 400
-          }}
           >
           {state.toggled ? description() : technologyUsed()}
         </div>

@@ -15,7 +15,7 @@ export default function connectFour() {
   }
   const technologyUsed =() => {
     return (
-      <div id="connectFourTechnologies" style={{width: 400}}>
+      <div id="connectFourTechnologies">
         <div className="techHead">Technologies: </div>
         <span className="tech">React, Javascript, CSS, Webpack</span>
       </div>
@@ -23,10 +23,10 @@ export default function connectFour() {
   }
   const description = () => {
     return (
-      <div id="connectFourTechnologies" style={{width: 425}}>
+      <div id="connectFourTechnologies">
         <div className="techHead">Description:</div>
         <div className="description">
-            Built a clone of Connect Four with React and transpiled JSX through Babel via Webpack
+            Built a clone of the classic Connect Four game with React and transpiled JSX through Babel via Webpack
         </div>
     </div>
     )
@@ -35,7 +35,11 @@ export default function connectFour() {
     return (
       <div id="connectFourProject"onMouseEnter={e => {hoverOver()}}onMouseLeave={e => {hoverOut()}}>
         <div id="connectFourTitle"> <a  href="https://github.com/Gkolman/mini-apps-1" style={{color:'white'}} >  Connect-Four </a></div>
-        <Image id="connectFourDisplay"src = "/images/connectFour.gif" alt="loading..."height="260"width="425"/>
+        <Image id="connectFourDisplay"src = "/images/connectFour.gif"
+            alt="loading..."
+            height="5vw"
+            width="8vw"
+            layout="responsive"/>
         {description()}
       </div>
     )
@@ -43,7 +47,11 @@ export default function connectFour() {
     return (
       <div id="connectFourProject"onMouseEnter={e => {hoverOver()}}onMouseLeave={e => {hoverOut()}}>
         <div id="connectFourTitle"> <a  href="https://github.com/Gkolman/mini-apps-1" style={{color:'white'}} >  Connect-Four </a></div>
-        <Image id="connectFourDisplay"src = "/images/connectFour.png" alt="loading..."height="230"width="400"/>
+        <Image id="connectFourDisplay"src = "/images/connectFour.png"
+          alt="loading..."
+          height="5vw"
+          width="8vw"
+          layout="responsive"/>
         {technologyUsed()}
     </div>
     )
