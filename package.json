@@ -4,7 +4,9 @@
   "scripts": {
     "dev": "nodemon server.js",
     "build": "next build",
-    "start": "cross-env NODE_ENV=production node server.js"
+    "start": "cross-env NODE_ENV=production node server.js",
+    "start-prod": "pm2 start prod-server.js",
+    "stop-prod": "pm2 stop prod-server.js"
   },
   "dependencies": {
     "@svgr/webpack": "^5.5.0",
@@ -19,6 +21,7 @@
     "node-sass": "^4.14.1",
     "nodemon": "^2.0.12",
     "path": "^0.12.7",
+    "pm2": "^5.1.0",
     "postcss-loader": "^6.1.1",
     "raw-loader": "^4.0.2",
     "react": "^16.6.3",
