@@ -27,7 +27,7 @@ export default function MineSweeper() {
       <div id="mineSweeperTechnologies">
         <div className="techHead">Description:</div>
         <div className="description">
-          Designed a mineSweeper game clone in React with Redux for state management.
+          Designed a clone of the nastalgic Minesweeper game in React with Redux for state management.
         </div>
     </div>
     )

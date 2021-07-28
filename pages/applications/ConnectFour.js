@@ -17,7 +17,7 @@ export default function connectFour() {
     return (
       <div id="connectFourTechnologies">
         <div className="techHead">Technologies: </div>
-        <span className="tech">React, Javascript, CSS, Webpack</span>
+        <span className="tech">React,  Javascript,  Express,  CSS,  Webpack</span>
       </div>
     )
   }
@@ -26,7 +26,7 @@ export default function connectFour() {
       <div id="connectFourTechnologies">
         <div className="techHead">Description:</div>
         <div className="description">
-            Built a clone of the classic Connect Four game with React and transpiled JSX through Babel via Webpack
+            Built a clone of the classic Connect Four game with React and hosted on an express server
         </div>
     </div>
     )
