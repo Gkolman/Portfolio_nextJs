@@ -32,7 +32,7 @@ export default function TicTacToe() {
     return (
       <div id="ticTacToeProject"onMouseEnter={e => {hoverOver()}}onMouseLeave={e => {hoverOut()}}>
       <div id="ticTacToeTitle"> <a  href="https://github.com/Gkolman/mini-apps-1" style={{color:'white'}} >  Tic-tac-toe </a></div>
-        <Image id="ticTacToeDisplay"src = "/images/tic-tac-toe.gif"
+        <Image id="ticTacToeDisplay"src = "/static/images/tic-tac-toe.gif"
           alt="loading..."
           height="5vw"
           width="8vw"
@@ -45,7 +45,7 @@ export default function TicTacToe() {
     return (
       <div id="ticTacToeProject"onMouseEnter={e => {hoverOver()}}onMouseLeave={e => {hoverOut()}}>
       <div id="ticTacToeTitle"> <a  href="https://github.com/Gkolman/mini-apps-1" style={{color:'white'}} >  Tic-tac-toe </a></div>
-      <Image id="ticTacToeDisplay"src = "/images/tic-tac-toe.png"
+      <Image id="ticTacToeDisplay"src = "/static/images/tic-tac-toe.png"
         alt="loading..."
         height="5vw"
         width="8vw"

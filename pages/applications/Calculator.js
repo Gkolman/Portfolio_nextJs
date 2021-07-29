@@ -31,7 +31,7 @@ export default function Calculator() {
       <div id="calculatorProject"onMouseEnter={e => {hoverOver()}}onMouseLeave={e => {hoverOut()}}>
         <div id="calculatorTitle"> <a  href="https://github.com/Gkolman/react-native-calculator" style={{color:'white'}} > Calculator </a></div>
         <Image id="calculatorDisplay"  alt="loading..."
-        src= {state.toggled ?'/images/calculator.gif' : '/images/calculator.png'}
+        src= {state.toggled ?'/static/images/calculator.gif' : '/static/images/calculator.png'}
         alt="loading..."
         height="5vw"
         width="8vw"

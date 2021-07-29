@@ -35,7 +35,7 @@ export default function connectFour() {
     return (
       <div id="connectFourProject"onMouseEnter={e => {hoverOver()}}onMouseLeave={e => {hoverOut()}}>
         <div id="connectFourTitle"> <a  href="https://github.com/Gkolman/mini-apps-1" style={{color:'white'}} >  Connect-Four </a></div>
-        <Image id="connectFourDisplay"src = "/images/connectFour.gif"
+        <Image id="connectFourDisplay"src = "/static/images/connectFour.gif"
             alt="loading..."
             height="5vw"
             width="8vw"
@@ -47,7 +47,7 @@ export default function connectFour() {
     return (
       <div id="connectFourProject"onMouseEnter={e => {hoverOver()}}onMouseLeave={e => {hoverOut()}}>
         <div id="connectFourTitle"> <a  href="https://github.com/Gkolman/mini-apps-1" style={{color:'white'}} >  Connect-Four </a></div>
-        <Image id="connectFourDisplay"src = "/images/connectFour.png"
+        <Image id="connectFourDisplay"src = "/static/images/connectFour.png"
           alt="loading..."
           height="5vw"
           width="8vw"

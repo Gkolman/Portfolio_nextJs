@@ -52,7 +52,7 @@ export default function Reviews() {
     return(
     <div id="reviewsProject"onMouseEnter={e => {hoverOver()}} onMouseLeave={e => {hoverOut()}}>
       <div id="reviewsTitle"> <a  href="https://github.com/Gkolman/Reviews-component" style={{color:'white'}} > Reviews: micro-service </a></div>
-      <Image id="reviewsDisplay" src = "/images/FecGif.gif"
+      <Image id="reviewsDisplay" src = "/static/images/FecGif.gif"
         alt="loading..."
         height="5vw"
         width="8vw"
@@ -65,7 +65,7 @@ export default function Reviews() {
     return (
       <div id="reviewsProject"onMouseEnter={e => {hoverOver()}} onMouseLeave={e => {hoverOut()}}>
       <div id="reviewsTitle"> <a  href="https://github.com/Gkolman/Reviews-component" style={{color:'white'}} > Reviews: micro-service </a></div>
-        <Image id="reviewsDisplay" src = "/images/Fec.png"
+        <Image id="reviewsDisplay" src = "/static/images/Fec.png"
         alt="loading..."
         height="5vh"
         width="8vw"

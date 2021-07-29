@@ -16,7 +16,7 @@ export default function Applications() {
       <div className='frame'>
         <Image
           id=""
-          src='/images/background6.jpg'
+          src='/static/images/background6.jpg'
           alt="loading..."
           layout = "fill"
         />

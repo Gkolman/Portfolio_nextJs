@@ -14,14 +14,14 @@ export default function AboutMe() {
   <div>
     <SideBar/>
     <div className='frame'>
-      <Image src='/images/background.jpg' alt="loading backrgound..."layout = "fill"/>
+      <Image src='/static/images/background.jpg' alt="loading backrgound..."layout = "fill"/>
     </div>
     <div className="subBody">
       <div className="aboutMeHeader">
         <div className="headerBackDrop">
           <div className="nameHeader" > Gage Guzman </div>
           <div className="selfie">
-            <Image src='/images/selfie.png' width='1vw' height='1vw' alt="loading..." layout="responsive"/>
+            <Image src='/static/images/selfie.png' width='1vw' height='1vw' alt="loading..." layout="responsive"/>
           </div>
 
           <a  id="github" href="https://github.com/Gkolman">Github</a>
