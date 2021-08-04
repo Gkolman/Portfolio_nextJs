@@ -53,10 +53,11 @@ body {
 .selfie{
   position: absolute;
   top: 35%;
-  height: 17vw;
+  height: auto;
   width: 17vw;
   // height: 72%;
   // width: 220px;
+  overflow: hidden;
   right: 40%;
   background: rgba(0, 0, 0, 0.6);
   border-radius: 50%;

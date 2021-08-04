@@ -21,7 +21,7 @@ export default function AboutMe() {
         <div className="headerBackDrop">
           <div className="nameHeader" > Gage Guzman </div>
           <div className="selfie">
-            <Image src='/static/images/selfie.png' width='1vw' height='1vw' alt="loading..." layout="responsive"/>
+            <Image src='/static/images/selfie.png' width={'100vw'} height={'100vw'} alt="loading..." layout="responsive"/>
           </div>
 
           <a  id="github" href="https://github.com/Gkolman">Github</a>
@@ -31,7 +31,7 @@ export default function AboutMe() {
         </div>
       </div>
           <div id="aboutMe"  style={{borderColor: state.toggled? 'yellow': 'white'}} >
-                Software Engineer in the Bay Area passionate
+                Software engineer in the California Bay Area. Passionate
                 about code and innovative technology with experience
                 creating production ready full stack applications in javascript.
                 Fast learner that's familiar with pair programming,
