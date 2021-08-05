@@ -33,9 +33,9 @@ export default function AboutMe() {
           <div id="aboutMe"  style={{borderColor: state.toggled? 'yellow': 'white'}} >
                 Software engineer in the California Bay Area. Passionate
                 about code and innovative technology with experience
-                creating production ready full stack applications in javascript.
+                creating production ready full stack applications in Javascript.
                 Fast learner that's familiar with pair programming,
-                Agile workflow and test-driven development.
+                agile workflow and test-driven development.
                 Looking for my next team to be apart of and collaborate with to create
                 something neat that we can all be proud of!
           </div>
