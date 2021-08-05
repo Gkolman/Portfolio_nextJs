@@ -10,7 +10,7 @@ export default function TicTacToe() {
 
   const technologyUsed =() => {
     return (
-      <div id="ticTacToeTechnologies">
+      <div>
         <div className="techHead">Technologies: </div>
         <span className="tech"> Vanilla Javascript, HTML,CSS</span>
       </div>
@@ -19,7 +19,7 @@ export default function TicTacToe() {
   const description = () => {
 
     return (
-      <div id="ticTacToeTechnologies">
+      <div>
         <div className="techHead">Description:</div>
         <div className="description">
           Created a clone of connect tic-tac-toe with plain html, vanilla javascript, and css
@@ -27,31 +27,20 @@ export default function TicTacToe() {
     </div>
     )
   }
-
-  if (state.toggled) {
-    return (
-      <div id="ticTacToeProject"onMouseEnter={e => {hoverOver()}}onMouseLeave={e => {hoverOut()}}>
-      <div id="ticTacToeTitle"> <a  href="https://github.com/Gkolman/mini-apps-1" style={{color:'white'}} >  Tic-tac-toe </a></div>
-        <Image id="ticTacToeDisplay"src = "/static/images/tic-tac-toe.gif"
+  return (
+    <div id="ticTacToeProject"onMouseEnter={e => {hoverOver()}}onMouseLeave={e => {hoverOut()}}>
+      <a href="https://github.com/Gkolman/mini-apps-1">
+        <div id="ticTacToeTitle"> <a href="https://github.com/Gkolman/mini-apps-1" style={{color:'white'}} >  Tic-tac-toe </a></div>
+        <Image id="ticTacToeDisplay" src =  {state.toggled? "/static/images/tic-tac-toe.gif": "/static/images/tic-tac-toe.png"}
           alt="loading..."
           height="5vw"
           width="8vw"
-          layout="responsive"
-        />
-        {description()}
-      </div>
-    )
-  } else {
-    return (
-      <div id="ticTacToeProject"onMouseEnter={e => {hoverOver()}}onMouseLeave={e => {hoverOut()}}>
-      <div id="ticTacToeTitle"> <a  href="https://github.com/Gkolman/mini-apps-1" style={{color:'white'}} >  Tic-tac-toe </a></div>
-      <Image id="ticTacToeDisplay"src = "/static/images/tic-tac-toe.png"
-        alt="loading..."
-        height="5vw"
-        width="8vw"
-        layout="responsive"/>
-      {technologyUsed()}
+          layout="responsive"/>
+        <div id="ticTacToeTechnologies">
+          {state.toggled? description() : technologyUsed()}
+        </div>
+      </a>
     </div>
-    )
-  }
+  )
+
 }

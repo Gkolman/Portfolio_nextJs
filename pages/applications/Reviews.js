@@ -5,17 +5,11 @@ import React, { useState } from 'react'
 export default function Reviews() {
   var [state,setState] = useState({toggled: false})
 
-  const hoverOver = () => {
-    console.log('entering hover over')
-    setState({toggled :true})
-  }
-  const hoverOut = () => {
-    console.log('entering hover out')
-    setState({toggled :false})
-  }
+  const hoverOver = () => {setState({toggled :true})}
+  const hoverOut = () => {setState({toggled :false})}
   const technologyUsed = () => {
     return (
-      <div id="reviewsTechnologies">
+      <div >
         <div className="techHead">Technologies:</div>
         <div id="reviewsTechList">
           <div>
@@ -37,7 +31,7 @@ export default function Reviews() {
   const description = () => {
 
     return (
-      <div id="reviewsTechnologies">
+      <div >
       <div className="techHead">Description:</div>
       <div>
         <div className="description">
@@ -48,30 +42,22 @@ export default function Reviews() {
     )
 
   }
-  if (state.toggled) {
-    return(
-    <div id="reviewsProject"onMouseEnter={e => {hoverOver()}} onMouseLeave={e => {hoverOut()}}>
-      <div id="reviewsTitle"> <a  href="https://github.com/Gkolman/Reviews-component" style={{color:'white'}} > Reviews: micro-service </a></div>
-      <Image id="reviewsDisplay" src = "/static/images/FecGif.gif"
-        alt="loading..."
-        height="5vw"
-        width="8vw"
-        layout="responsive"/>
-      {description()}
-    </div>
-    )
 
-  } else {
-    return (
-      <div id="reviewsProject"onMouseEnter={e => {hoverOver()}} onMouseLeave={e => {hoverOut()}}>
-      <div id="reviewsTitle"> <a  href="https://github.com/Gkolman/Reviews-component" style={{color:'white'}} > Reviews: micro-service </a></div>
-        <Image id="reviewsDisplay" src = "/static/images/Fec.png"
-        alt="loading..."
-        height="5vh"
-        width="8vw"
-        layout="responsive"/>
-        {technologyUsed()}
-    </div>
-    )
-  }
+  return (
+    <div id="reviewsProject"onMouseEnter={e => {hoverOver()}} onMouseLeave={e => {hoverOut()}}>
+      <a  href="https://github.com/Gkolman/Reviews-component">
+        <div id="reviewsTitle"> <a  href="https://github.com/Gkolman/Reviews-component" style={{color:'white'}} > Reviews: micro-service </a></div>
+          <Image id="reviewsDisplay"
+          src =   {state.toggled ? "/static/images/FecGif.gif": "/static/images/Fec.png"}
+          alt="loading..."
+          height="5vw"
+          width="8vw"
+          layout="responsive"/>
+        <div id="reviewsTechnologies">
+            {state.toggled ? description(): technologyUsed()}
+        </div>
+      </a>
+  </div>
+  )
+
 }

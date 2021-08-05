@@ -5,17 +5,11 @@ import React, { useState } from 'react'
 export default function connectFour() {
   var [state,setState] = useState({toggled: false})
 
-  const hoverOver = () => {
-    console.log('entering hover over')
-    setState({toggled :true})
-  }
-  const hoverOut = () => {
-    console.log('entering hover out')
-    setState({toggled :false})
-  }
+  const hoverOver = () => {setState({toggled :true})}
+  const hoverOut = () => {setState({toggled :false})}
   const technologyUsed =() => {
     return (
-      <div id="connectFourTechnologies">
+      <div>
         <div className="techHead">Technologies: </div>
         <span className="tech">React,  Javascript,  Express,  CSS,  Webpack</span>
       </div>
@@ -23,7 +17,7 @@ export default function connectFour() {
   }
   const description = () => {
     return (
-      <div id="connectFourTechnologies">
+      <div>
         <div className="techHead">Description:</div>
         <div className="description">
             Built a clone of the classic Connect Four game with React and hosted on an express server
@@ -31,30 +25,19 @@ export default function connectFour() {
     </div>
     )
   }
-  if (state.toggled) {
-    return (
-      <div id="connectFourProject"onMouseEnter={e => {hoverOver()}}onMouseLeave={e => {hoverOut()}}>
+
+  return (
+      <div id="connectFourProject" onMouseEnter={e => {hoverOver()}}onMouseLeave={e => {hoverOut()}}>
+        <a  href="https://github.com/Gkolman/mini-apps-1" >
         <div id="connectFourTitle"> <a  href="https://github.com/Gkolman/mini-apps-1" style={{color:'white'}} >  Connect-Four </a></div>
-        <Image id="connectFourDisplay"src = "/static/images/connectFour.gif"
-            alt="loading..."
-            height="5vw"
-            width="8vw"
-            layout="responsive"/>
-        {description()}
-      </div>
-    )
-  } else {
-    return (
-      <div id="connectFourProject"onMouseEnter={e => {hoverOver()}}onMouseLeave={e => {hoverOut()}}>
-        <div id="connectFourTitle"> <a  href="https://github.com/Gkolman/mini-apps-1" style={{color:'white'}} >  Connect-Four </a></div>
-        <Image id="connectFourDisplay"src = "/static/images/connectFour.png"
-          alt="loading..."
+        <Image id="connectFourDisplay" alt="loading..."
+          src={state.toggled ? "/static/images/connectFour.gif" : "/static/images/connectFour.png" }
           height="5vw"
           width="8vw"
-          layout="responsive"/>
-        {technologyUsed()}
-    </div>
+          layout="responsive"
+          />
+        <div id="connectFourTechnologies">{state.toggled ? description() : technologyUsed()}</div>
+        </a>
+      </div>
     )
-  }
-
   }

@@ -5,14 +5,8 @@ import React, { useState } from 'react'
 export default function CheckoutCalendar() {
   var [state,setState] = useState({toggled: false})
 
-  const hoverOver = () => {
-    console.log('entering hover over')
-    setState({toggled :true})
-  }
-  const hoverOut = () => {
-    console.log('entering hover out')
-    setState({toggled :false})
-  }
+  const hoverOver = () => {setState({toggled :true})}
+  const hoverOut = () => {setState({toggled :false})}
 
   const technologyUsed = () => {
     return (
@@ -40,15 +34,17 @@ export default function CheckoutCalendar() {
     )
   }
     return(
-    <div id="checkoutCalendarProject"onMouseEnter={e => {hoverOver()}} onMouseLeave={e => {hoverOut()}}>
-      <div id="checkoutCalendarTitle"> <a  href="https://github.com/Gkolman/checkout-calendar" style={{color:'white'}} >  Checkout/Pricing: micro-service </a></div>
-      <Image id="checkoutCalendarDisplay" alt="loading..."
-        src ={state.toggled ? '/static/images/sdc.gif' : '/static/images/sdc.png'}
-        height="5vw"
-        width="8vw"
-        layout="responsive"
-      />
-      <div id="checkoutCalendarTechnologies">{state.toggled ? description() : technologyUsed()}</div>
+      <div id="checkoutCalendarProject"onMouseEnter={e => {hoverOver()}} onMouseLeave={e => {hoverOut()}}>
+        <a  href="https://github.com/Gkolman/checkout-calendar" >
+          <div id="checkoutCalendarTitle"> <a  href="https://github.com/Gkolman/checkout-calendar" style={{color:'white'}} >  Checkout/Pricing: micro-service </a></div>
+          <Image id="checkoutCalendarDisplay" alt="loading..."
+            src ={state.toggled ? '/static/images/sdc.gif' : '/static/images/sdc.png'}
+            height="5vw"
+            width="8vw"
+            layout="responsive"
+          />
+          <div id="checkoutCalendarTechnologies">{state.toggled ? description() : technologyUsed()}</div>
+        </a>
     </div>
     )
 }
